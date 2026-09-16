@@ -1,0 +1,7 @@
+# TanStack Start + Nitro (netlify preset) build output:
+#   - static client assets -> dist/
+#   - SSR handler          -> .netlify/functions-internal/server (auto-detected by Netlify)
+# The publish directory must be "dist"; "dist/client" is never produced by this build.
+[build]
+  command = "bun run build"
+  publish = "dist"
